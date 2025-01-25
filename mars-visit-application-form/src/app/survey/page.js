@@ -4,6 +4,7 @@ import { useState } from "react";
 import StepOne from "./components/StepOne";
 import StepTwo from "./components/StepTwo";
 import StepThree from "./components/StepThree";
+//import RootLayout from "../Layout";
 
 const SurveyPage = () => {
   const [currentStep, setCurrentStep] = useState(1);
@@ -35,8 +36,9 @@ const SurveyPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center p-8 sm:p-20">
-      <div className="bg-gray-700 shadow-lg rounded-lg p-8 sm:p-20 text-center max-w-2xl w-full">
+
+    <div className="min-h-screen bg-gray-300 flex items-center justify-center p-8 sm:p-20">
+      <div className="bg-gray-500 shadow-lg rounded-lg p-8 sm:p-20 text-center max-w-2xl w-full ">
         {currentStep === 1 && (
           <StepOne formData={formData} updateData={updateData} nextStep={nextStep} />
         )}
@@ -48,6 +50,7 @@ const SurveyPage = () => {
         )}
       </div>
     </div>
+    
   );
 };
 

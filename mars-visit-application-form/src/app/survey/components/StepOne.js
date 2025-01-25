@@ -29,7 +29,7 @@ const countries = [
 
 const StepOne = ({ formData, updateData, nextStep }) => {
   return (
-    <div className="max-w-lg mx-auto p-5 font-sans bg-gray-800 text-white shadow-md rounded-lg mt-20">
+    <div className=" max-w-lg mx-auto p-10 font-sans bg-gray-800 text-white shadow-md rounded-lg ">
       
       <h2 className=" text-center text-2xl font-bold mb-6 ">Personal Information</h2>
 
